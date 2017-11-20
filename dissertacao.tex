@@ -1,0 +1,198 @@
+%% Exemplo de utilizacao do estilo de formatacao normas-utf-tex (http://normas-utf-tex.sourceforge.net)
+%% Autores: Hugo Vieira Neto (hvieir@utfpr.edu.br)
+%%          Diogo Rosa Kuiaski (diogo.kuiaski@gmail.com)
+%% Colaboradores:
+%%          César M. Vargas Benitez <cesarvargasb@gmail.com>
+%%          Marcos Talau <talau@users.sourceforge.net>
+
+\documentclass[openright]{normas-utf-tex} %openright = o capitulo comeca sempre em paginas impares
+%\documentclass[oneside]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha) 
+
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+
+\usepackage[brazil]{babel} % pacote portugues brasileiro
+%\usepackage[latin1]{inputenc} % pacote para acentuacao direta ISO-8859-1
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+\usepackage{times} % fonte times
+
+%Podem utilizar GEOMETRY{...} para realizar pequenos ajustes das margens. Onde, left=esquerda, right=direita, top=superior, bottom=inferior. P.ex.:
+%\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm} 
+
+% ---------- Preambulo ----------
+\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
+\programa{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial} % nome do programa
+\area{Informática Industrial} % [Engenharia Biom\'edica] ou [Inform\'atica Industrial] ou [Telem\'atica]
+
+\documento{Dissertação} % [Disserta\c{c}\~ao] ou [Tese]
+\nivel{Mestrado} % [Mestrado] ou [Doutorado]
+\titulacao{Mestre} % [Mestre] ou [Doutor]
+
+
+\titulo{\MakeUppercase{Título em Português}} % titulo do trabalho em portugues
+\title{\MakeUppercase{Title in english}} % titulo do trabalho em ingles
+
+\autor{autor do trabalho} % autor do trabalho
+\cita{TRABALHO, autor} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{palavra1, palavra2, palavra3}
+\keywords{word1, word2, word3} 
+
+\comentario{\UTFPRdocumentodata\ apresentada ao \UTFPRprogramadata\ da \ABNTinstituicaodata\ como requisito parcial para obtenção do grau de ``\UTFPRtitulacaodata\ em Ciências'' -- \'Area de Concentração: \UTFPRareadata.}
+
+\orientador{Nome do Orientador} % nome do orientador do trabalho
+\coorientador[Co-orientadores:]{Nome do Coorientador} % <- no caso de co-orientadora, usar esta sintaxe
+%\coorientadorb{}	% este comando inclui o nome do 2o co-orientador
+
+\local{Curitiba} % cidade
+\data{\the\year} % ano automatico
+
+
+\usepackage{algorithm}
+\usepackage{algpseudocode} % já carrega automaticamente \usepackage{algorithmicx
+\floatname{algorithm}{Algoritmo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Inicio do Documento
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\capa % geracao automatica da capa
+\folhaderosto % geracao automatica da folha de rosto
+%\termodeaprovacao % <- ainda a ser implementado corretamente
+
+% dedicatria (opcional)
+\begin{dedicatoria}
+Texto da dedicatória.
+\end{dedicatoria}
+
+% agradecimentos (opcional)
+\begin{agradecimentos}
+Texto dos agradecimentos.
+\end{agradecimentos}
+
+% epigrafe (opcional)
+\begin{epigrafe}
+Texto da epígrafe.
+\end{epigrafe}
+
+%resumo
+\begin{resumo}
+Texto do resumo (máximo de 500 palavras).
+\end{resumo}
+
+\begin{abstract}
+Abstract text (maximum of 500 words).
+\end{abstract}
+
+% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+\listadefiguras % geracao automatica da lista de figuras
+\listadetabelas % geracao automatica da lista de tabelas
+\listadesiglas % geracao automatica da lista de siglas
+\listadesimbolos % geracao automatica da lista de simbolos
+\sumario 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		INTRODUÇÃO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introdução}
+
+
+
+\section{Objetivos}
+
+
+
+\section{Contribuições}
+
+
+
+\section{Organização do Trabalho}
+Revisão bibliográfica esta descrita no Capítulo \ref{chap:revisao},...\ref{chap:desenv}, \ref{chap:resultados}, \ref{chap:conclusao}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		REVISÃO BIBLIOGRÁFICA
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{arquivos/02_revisao_bibliografica.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		DESENVOLVIMENTO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{arquivos/03_desenvolvimento.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		EXPERIMENTOS E RESULTADOS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{arquivos/04_experimentos_e_resultados.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		CONCLUSÂO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusão}\label{chap:conclusao}
+
+%%%%Contexto do trabalho
+
+
+%%%%Objetivos
+
+
+%%%%Explique os experimento
+
+
+%%%%Conclusões
+
+
+%%%%Indicativo de trabalho futuros
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------- Referencias ----------
+%\ABNTbibliographyname
+\bibliography{referencias}
+
+%---------- Apendices (opcionais) ---------- Utilizar para adicionar informações da pesquisa/resultados
+\apendice
+\chapter{Comparação com a Literatura}
+
+%Use o comando {\ttfamily \textbackslash apendice} e depois comandos {\ttfamily \textbackslash chapter\{\}} para gerar títulos de apêndices.
+
+
+% ---------- Anexos (opcionais) ---------- Utilizar para Explicar assuntos diversos
+\anexo
+\chapter{Nome do Anexo}
+
+%Use o comando {\ttfamily \textbackslash anexo} e depois comandos {\ttfamily \textbackslash chapter\{\}} para gerar títulos de anexos.
+
+
+%-------- Citacoes ---------
+% - Utilize o comando \citeonline{...} para citacoes com o seguinte formato: Autor et al. (2011).
+% Este tipo de formato eh utilizado no comeco do paragrafo. P.ex.: \citeonline{autor2011}
+% - Utilize o comando \cite{...} para citacoeses no meio ou final do paragrafo. P.ex.: \cite{autor2011}
+
+%\newpage
+\clearpage
+\input{arquivos/singlas.tex}
+\input{arquivos/simbolos.tex}
+
+\end{document}
+
+
+

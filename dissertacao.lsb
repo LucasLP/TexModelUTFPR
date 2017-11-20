@@ -1,0 +1,21 @@
+\contentsline {simbolo}{\hbox to\@tempdima {$x_i^{(L)}$\hfil }{Restri\IeC {\c c}\IeC {\~a}o inferior para a vari\IeC {\'a}vel de decis\IeC {\~a}o i.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$x_i^{(U)}$\hfil }{Restri\IeC {\c c}\IeC {\~a}o superior para a vari\IeC {\'a}vel de decis\IeC {\~a}o i.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$\Omega $\hfil }{Conjunto finito de solu\IeC {\c c}\IeC {\~o}es fact\IeC {\'\i }veis.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$F$\hfil }{Fator de Muta\IeC {\c c}\IeC {\~a}o.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$CR$\hfil }{Valor de Crossover.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$NP$\hfil }{Tamanho da Popula\IeC {\c c}\IeC {\~a}o.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$N$\hfil }{N\IeC {\'u}mero de Subproblemas.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$z^*$\hfil }{Ponto Ideal Emp\IeC {\'\i }rico.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$\delta $\hfil }{Valor que determina sele\IeC {\c c}\IeC {\~a}o de escopo.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$\lambda $\hfil }{Vetor peso.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$nr$\hfil }{N\IeC {\'u}mero m\IeC {\'a}ximo de inser\IeC {\c c}\IeC {\~o}es de um indiv\IeC {\'\i }duo no escopo.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$\pi ^i$\hfil }{Valor de utilidade do subproblema $i$.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$\Delta ^i$\hfil }{\IeC {\'E} a diminui\IeC {\c c}\IeC {\~a}o relativa do valor da fun\IeC {\c c}\IeC {\~a}o objetivo do subproblema $i$.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$g^{tche1}$\hfil }{Fun\IeC {\c c}\IeC {\~a}o de agrega\IeC {\c c}\IeC {\~a}o Tchebycheff1 (Equa\IeC {\c c}\IeC {\~a}o \ref {eq:tche}).}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$g^{tche2}$\hfil }{Fun\IeC {\c c}\IeC {\~a}o de agrega\IeC {\c c}\IeC {\~a}o Tchebycheff2 (Equa\IeC {\c c}\IeC {\~a}o \ref {eq:tche2}).}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$g^{pbi}$\hfil }{Fun\IeC {\c c}\IeC {\~a}o de agrega\IeC {\c c}\IeC {\~a}o PBI (Equa\IeC {\c c}\IeC {\~a}o \ref {eq:PBI}).}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$C$\hfil }{Valor que controla o \emph {trade-off} entre explora\IeC {\c c}\IeC {\~a}o e intensifica\IeC {\c c}\IeC {\~a}o.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$D$\hfil }{Valor de Decaimento.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$op$\hfil }{Operador selecionado pelo UCB.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$n_op$\hfil }{N\IeC {\'u}mero de vezes que o operador $op$ foi aplicado na Janela de tempo.}}{19}
+\contentsline {simbolo}{\hbox to\@tempdima {$SW$\hfil }{\emph {Sliding Window}, onde os dados das execu\IeC {\c c}\IeC {\~o}es ser\IeC {\~a}o armazenados.}}{19}
