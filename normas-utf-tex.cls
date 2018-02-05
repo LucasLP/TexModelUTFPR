@@ -617,6 +617,44 @@
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{\normalfont #1}\hfil\nobreak\par
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LISTA DE ALGORITMOS
+
+%% Cria um comando auxiliar para montagem da lista de tabelas
+\newcommand{\algfillnum}[1]
+{
+	{\hspace{0em}\normalfont\dotfill}\nobreak
+	\hb@xt@\@pnumwidth{\hfil\normalfont #1}{}
+	\begin{spacing}{\taxaespacomeio}\par\end{spacing}
+}
+
+% Altera a forma de montagem da lista de tabelas
+\newcommand{\listadealgoritmos}
+{
+	\ifthenelse{\boolean{@twocolumn}}
+		{\setboolean{ABNTrestorecol}{true}\onecolumn}
+		{\setboolean{ABNTrestorecol}{false}}
+	\setchaptertype{listofalgorithms}
+	\pretextualchapter{LISTA DE ALGORITMOS}
+	\begin{espacosimples}
+	\@starttoc{loa}
+	\end{espacosimples}
+	\ifthenelse{\boolean{ABNTrestorecol}}
+		{\twocolumn}
+		{}
+}%
+
+\newcommand*{\l@algorithm}[2]
+{
+	\leftskip 3.4em % 3.4em
+	\rightskip 1.8em
+	\parfillskip -\rightskip
+        \parindent -1.1em
+	\@tempdima 4.8em
+	--\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	%{\MakeUppercase{Tabela \normalfont #1}}\nobreak \tabfillnum{#2}
+	{\MakeUppercase{Algoritmo} \normalfont #1}\nobreak \algfillnum{#2} % 
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
